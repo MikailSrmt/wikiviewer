@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Oswald'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="row">
+    <div class="explain">
+      <h1 class="col-md-12">This is a wikipedia search and random page application. It is designed for freecodecamp wikipedia viewer challenge and fullfilled all user stories. Feedbacks are appreciated <a target="_blank" href='https://twitter.com/MiSeremet' >@MiSeremet</a></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="randomWiki col-md-12 buttonRow">
+      <button class="btn btn-primary" onclick='randomWiki()'>Random Wiki <span class="icon-random"></span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="searchWiki col-md-8 col-md-offset-6">
+      <div id="custom-search-input">
+        <div class="input-group col-md-12">
+          <input type="text" id='search-box' class="search-query form-control" placeholder="Wiki Search" autofocus/>
+          <span class="input-group-btn">
+            <button id="search-button" class="btn btn-danger" type="button" onclick='getSearch()'>
+              <span class="icon-search">
+              </span>
+          </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="resultRow">
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
